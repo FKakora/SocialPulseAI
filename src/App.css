@@ -1,0 +1,370 @@
+/* ---------- Page layout ---------- */
+.app {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100svh;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    background: var(--navy-900);
+    color: #c7d2e6;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    position: sticky;
+    top: 0;
+    height: 100svh;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 8px;
+}
+
+.brand-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+}
+
+.brand-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.brand-sub {
+    font-size: 12px;
+    color: #8fa1c2;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-button {
+    all: unset;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #c7d2e6;
+    transition: background 0.15s;
+}
+
+    .nav-button:hover {
+        background: var(--navy-800);
+    }
+
+    .nav-button:focus-visible {
+        outline: 2px solid var(--accent);
+    }
+
+    .nav-button.active {
+        background: var(--navy-700);
+        color: #fff;
+        font-weight: 600;
+    }
+
+.sidebar-footer {
+    margin-top: auto;
+    font-size: 12px;
+    color: #8fa1c2;
+    padding: 0 8px;
+}
+
+/* ---------- Main area ---------- */
+.main {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 0;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.page-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.badge {
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+/* ---------- Cards ---------- */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+.card-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.card-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-strong);
+    margin-top: 8px;
+}
+
+.card-note {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* ---------- Tablet and mobile ---------- */
+@media (max-width: 900px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+
+    .main {
+        padding: 20px 16px;
+    }
+}
+
+/* ---------- Stage 3: data quality checks and tables ---------- */
+.quality-summary {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+    .quality-summary.pass {
+        color: #15803d;
+    }
+
+    .quality-summary.fail {
+        color: #b91c1c;
+    }
+
+.warning-note {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.check-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.check-icon {
+    display: inline-block;
+    width: 22px;
+    font-weight: 700;
+}
+
+    .check-icon.pass {
+        color: #15803d;
+    }
+
+    .check-icon.fail {
+        color: #b91c1c;
+    }
+
+.problem-list {
+    margin: 6px 0 0 22px;
+    padding-left: 16px;
+    font-size: 13px;
+    color: #b91c1c;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+    .table th,
+    .table td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+        white-space: nowrap;
+    }
+
+    .table th {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-muted);
+        font-weight: 600;
+    }
+
+        .table th small {
+            text-transform: none;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+
+    .table .num {
+        text-align: right;
+    }
+
+/* ---------- Stage 4: KPI cards ---------- */
+.period-caption {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Slightly narrower cards so all five fit on one row on a laptop */
+.kpi-grid {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.kpi-card .card-value {
+    font-size: 26px;
+}
+
+.kpi-change-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    margin-top: 8px;
+}
+
+.kpi-card .card-note {
+    margin-top: 8px;
+}
+
+.kpi-compare {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.trend {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+    .trend::before {
+        margin-right: 4px;
+        font-size: 10px;
+    }
+
+    .trend.up {
+        background: #dcfce7;
+        color: #15803d;
+    }
+
+        .trend.up::before {
+            content: '\25B2';
+        }
+
+    .trend.down {
+        background: #fee2e2;
+        color: #b91c1c;
+    }
+
+        .trend.down::before {
+            content: '\25BC';
+        }
+
+    .trend.flat,
+    .trend.na {
+        background: #eef1f6;
+        color: var(--text-muted);
+    }
+
+        .trend.flat::before {
+            content: '\25AC';
+        }
+
+/* ---------- Stage 5: charts ---------- */
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+    gap: 16px;
+}
+
+.chart-card {
+    min-width: 0;
+}
+
+.chart-area {
+    margin-top: 12px;
+    width: 100%;
+}
