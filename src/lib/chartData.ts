@@ -20,7 +20,11 @@ export type PlatformTotals = {
 
 /** One row of totals per platform, added up across the weeks given. */
 export function totalsByPlatform(rows: WeeklyMetric[]): PlatformTotals[] {
-    return PLATFORMS.map((platform) => {
+    // Only platforms that have rows, so a filtered-out platform is not shown.
+    const platformsWithData = PLATFORMS.filter((platform) =>
+        rows.some((row) => row.platform === platform),
+    )
+    return platformsWithData.map((platform) => {
         const platformRows = rows.filter((row) => row.platform === platform)
         const reach = sum(platformRows.map((row) => row.reach))
         const impressions = sum(platformRows.map((row) => row.impressions))
@@ -63,10 +67,15 @@ export function weeklyEngagementTrend(rows: WeeklyMetric[]): TrendPoint[] {
  * Net new followers for each platform, week by week.
  * Gain = followers at the end of this week - followers at the end of the
  * previous week (STARTING_FOLLOWERS is used for the very first week).
- * This relies on every platform having every week, which the data quality
- * checks confirm.
+ *
+ * rows:         should include ALL weeks for the platforms you want, so the
+ *               first visible week still has a correct "previous week".
+ * visibleWeeks: the weeks to return (defaults to every week in rows).
  */
-export function weeklyFollowerGainTrend(rows: WeeklyMetric[]): TrendPoint[] {
+export function weeklyFollowerGainTrend(
+    rows: WeeklyMetric[],
+    visibleWeeks: string[] = getWeeks(rows),
+): TrendPoint[] {
     const gains = new Map<string, number>()
 
     for (const platform of PLATFORMS) {
@@ -80,7 +89,7 @@ export function weeklyFollowerGainTrend(rows: WeeklyMetric[]): TrendPoint[] {
         }
     }
 
-    return getWeeks(rows).map((week) => {
+    return visibleWeeks.map((week) => {
         const values = emptyValues()
         for (const platform of PLATFORMS) {
             values[platform] = gains.get(`${platform}|${week}`) ?? null

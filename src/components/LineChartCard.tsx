@@ -44,6 +44,11 @@ function LineChartCard({
     valueType,
     showZeroLine = false,
 }: LineChartCardProps) {
+    // Only draw lines for platforms that have data in the current selection.
+    const visiblePlatforms = PLATFORMS.filter((platform) =>
+        data.some((point) => point[platform] !== null),
+    )
+
     return (
         <section className="card chart-card">
             <h2 className="panel-title">{title}</h2>
@@ -70,7 +75,7 @@ function LineChartCard({
                         />
                         <Legend />
                         {showZeroLine && <ReferenceLine y={0} stroke="#94a3b8" />}
-                        {PLATFORMS.map((platform) => (
+                        {visiblePlatforms.map((platform) => (
                             <Line
                                 key={platform}
                                 type="monotone"

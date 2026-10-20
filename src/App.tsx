@@ -7,11 +7,17 @@ import {
     STARTING_FOLLOWERS,
     WEEKLY_METRICS,
 } from './data/sampleData'
+import FilterBar from './components/FilterBar'
+import InsightsPage from './components/InsightsPage'
 import KpiCard from './components/KpiCard'
 import PlatformsPage from './components/PlatformsPage'
+import PostsPage from './components/PostsPage'
+import ReportPage from './components/ReportPage'
+import { filterPosts } from './lib/filters'
 import { buildKpis } from './lib/kpis'
-import { comparePeriods } from './lib/metrics'
+import { comparePeriods, getWeeks } from './lib/metrics'
 import { runDataQualityChecks } from './lib/validation'
+import type { Platform } from './types'
 
 type SectionId = 'overview' | 'platforms' | 'posts' | 'insights' | 'reports'
 
@@ -55,10 +61,12 @@ const NAV_ITEMS: NavItem[] = [
     },
 ]
 
-// The data never changes while the app runs, so we check and calculate once.
+// The data never changes while the app runs, so these are worked out once.
+// The data quality checks always cover the full dataset, whatever the filters.
 const qualityReport = runDataQualityChecks(WEEKLY_METRICS, POSTS)
-const comparison = comparePeriods(WEEKLY_METRICS, STARTING_FOLLOWERS)
-const kpis = comparison ? buildKpis(comparison) : []
+const ALL_WEEKS = getWeeks(WEEKLY_METRICS)
+const FIRST_WEEK = ALL_WEEKS[0]
+const LAST_WEEK = ALL_WEEKS[ALL_WEEKS.length - 1]
 
 function weekRange(weeks: string[]): string {
     return `${weeks[0]} to ${weeks[weeks.length - 1]}`
@@ -67,11 +75,72 @@ function weekRange(weeks: string[]): string {
 function App() {
     const [activeSection, setActiveSection] = useState<SectionId>('overview')
 
+    // Filter state: which platforms, and which weeks.
+    const [selectedPlatforms, setSelectedPlatforms] = useState<Platform[]>([
+        ...PLATFORMS,
+    ])
+    const [fromWeek, setFromWeek] = useState(FIRST_WEEK)
+    const [toWeek, setToWeek] = useState(LAST_WEEK)
+
+    function togglePlatform(platform: Platform) {
+        setSelectedPlatforms((current) => {
+            if (current.includes(platform)) {
+                // Always keep at least one platform selected.
+                if (current.length === 1) return current
+                return current.filter((item) => item !== platform)
+            }
+            // Add it back, keeping the platforms in their usual order.
+            return PLATFORMS.filter(
+                (item) => item === platform || current.includes(item),
+            )
+        })
+    }
+
+    // Keep "from" earlier than or equal to "to".
+    function changeFromWeek(week: string) {
+        setFromWeek(week)
+        if (week > toWeek) setToWeek(week)
+    }
+
+    function changeToWeek(week: string) {
+        setToWeek(week)
+        if (week < fromWeek) setFromWeek(week)
+    }
+
+    function resetFilters() {
+        setSelectedPlatforms([...PLATFORMS])
+        setFromWeek(FIRST_WEEK)
+        setToWeek(LAST_WEEK)
+    }
+
+    const isFiltered =
+        selectedPlatforms.length !== PLATFORMS.length ||
+        fromWeek !== FIRST_WEEK ||
+        toWeek !== LAST_WEEK
+
+    // Apply the filters.
+    // platformRows keeps ALL weeks for the chosen platforms, because follower
+    // growth for the first selected week needs the week before it.
+    const platformRows = WEEKLY_METRICS.filter((row) =>
+        selectedPlatforms.includes(row.platform),
+    )
+    const visibleWeeks = ALL_WEEKS.filter(
+        (week) => week >= fromWeek && week <= toWeek,
+    )
+    const visiblePosts = filterPosts(POSTS, selectedPlatforms, fromWeek, toWeek)
+
+    const comparison = comparePeriods(
+        platformRows,
+        STARTING_FOLLOWERS,
+        visibleWeeks,
+    )
+    const kpis = comparison ? buildKpis(comparison) : []
+    const unusedWeeks = comparison
+        ? visibleWeeks.length - 2 * comparison.current.weeks.length
+        : 0
+
     const current =
         NAV_ITEMS.find((item) => item.id === activeSection) ?? NAV_ITEMS[0]
-
-    const firstWeek = WEEKLY_METRICS[0].weekStart
-    const lastWeek = WEEKLY_METRICS[WEEKLY_METRICS.length - 1].weekStart
 
     return (
         <div className="app">
@@ -113,6 +182,18 @@ function App() {
                     <span className="badge">Fictional sample data</span>
                 </header>
 
+                <FilterBar
+                    selectedPlatforms={selectedPlatforms}
+                    onTogglePlatform={togglePlatform}
+                    weeks={ALL_WEEKS}
+                    fromWeek={fromWeek}
+                    toWeek={toWeek}
+                    onFromWeekChange={changeFromWeek}
+                    onToWeekChange={changeToWeek}
+                    onReset={resetFilters}
+                    isFiltered={isFiltered}
+                />
+
                 {activeSection === 'overview' && (
                     <>
                         {!qualityReport.allPassed && (
@@ -126,26 +207,33 @@ function App() {
                         {comparison ? (
                             <>
                                 <p className="period-caption">
-                                    Latest {comparison.current.weeks.length} weeks (
+                                    Latest {comparison.current.weeks.length}{' '}
+                                    {comparison.current.weeks.length === 1 ? 'week' : 'weeks'} (
                                     {weekRange(comparison.current.weeks)}) compared with the
-                                    previous {comparison.previous.weeks.length} weeks (
-                                    {weekRange(comparison.previous.weeks)}). Dates are week start dates.
+                                    previous {comparison.previous.weeks.length}{' '}
+                                    {comparison.previous.weeks.length === 1 ? 'week' : 'weeks'} (
+                                    {weekRange(comparison.previous.weeks)}). Dates are week start
+                                    dates.
+                                    {unusedWeeks > 0 &&
+                                        ` The oldest selected week is not used, so both periods are the same length.`}
                                 </p>
                                 <section className="kpi-grid" aria-label="Key metrics">
                                     {kpis.map((kpi) => (
                                         <KpiCard
                                             key={kpi.id}
                                             kpi={kpi}
-                                            comparisonLabel={`vs previous ${comparison.previous.weeks.length} weeks`}
+                                            comparisonLabel={`vs previous ${comparison.previous.weeks.length} ${comparison.previous.weeks.length === 1 ? 'week' : 'weeks'
+                                                }`}
                                         />
                                     ))}
                                 </section>
                             </>
                         ) : (
                             <section className="card">
-                                <h2 className="panel-title">Not enough data</h2>
+                                <h2 className="panel-title">Select at least 2 weeks</h2>
                                 <p>
-                                    At least 2 weeks of data are needed to compare periods.
+                                    The cards compare the latest weeks with the weeks before
+                                    them, so at least 2 weeks must be selected.
                                 </p>
                             </section>
                         )}
@@ -154,7 +242,8 @@ function App() {
                             <h2 className="panel-title">Sample dataset loaded</h2>
                             <p>
                                 {WEEKLY_METRICS.length} weekly rows across {PLATFORMS.length}{' '}
-                                platforms ({firstWeek} to {lastWeek}) and {POSTS.length} posts.
+                                platforms ({FIRST_WEEK} to {LAST_WEEK}) and {POSTS.length}{' '}
+                                posts.
                             </p>
                             <p className="card-note">{DATA_NOTICE}</p>
                         </section>
@@ -170,6 +259,10 @@ function App() {
                             >
                                 {qualityReport.passedCount} of {qualityReport.checks.length}{' '}
                                 checks passed
+                            </p>
+                            <p className="card-note">
+                                The checks always cover the full dataset, whatever filters are
+                                selected.
                             </p>
                             {!qualityReport.allPassed && (
                                 <p className="warning-note">
@@ -206,17 +299,29 @@ function App() {
                 )}
 
                 {activeSection === 'platforms' && (
-                    <PlatformsPage rows={WEEKLY_METRICS} />
+                    <PlatformsPage rows={platformRows} weeks={visibleWeeks} />
                 )}
 
-                {activeSection !== 'overview' && activeSection !== 'platforms' && (
-                    <section className="card">
-                        <h2 className="panel-title">{current.label}</h2>
-                        <p>
-                            This section is a placeholder. Real charts, tables and insights
-                            will appear here as we build the next stages.
-                        </p>
-                    </section>
+                {activeSection === 'posts' && (
+                    <PostsPage posts={visiblePosts} totalPosts={POSTS.length} />
+                )}
+
+                {activeSection === 'insights' && (
+                    <InsightsPage
+                        platformRows={platformRows}
+                        weeks={visibleWeeks}
+                        posts={visiblePosts}
+                    />
+                )}
+
+                {activeSection === 'reports' && (
+                    <ReportPage
+                        platformRows={platformRows}
+                        weeks={visibleWeeks}
+                        posts={visiblePosts}
+                        selectedPlatforms={selectedPlatforms}
+                        quality={qualityReport}
+                    />
                 )}
             </main>
         </div>

@@ -20,3 +20,13 @@ export function formatChange(
     const sign = value > 0 ? '+' : ''
     return `${sign}${value.toFixed(1)}${unit}`
 }
+
+/** '2026-08-24' -> '24 Aug 2026' */
+export function formatDate(isoDate: string): string {
+    return new Date(`${isoDate}T00:00:00Z`).toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+        timeZone: 'UTC',
+    })
+}

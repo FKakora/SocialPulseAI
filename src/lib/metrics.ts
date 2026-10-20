@@ -118,24 +118,28 @@ export function summarisePeriod(
 }
 
 /**
- * Compare the latest weeks with the same number of weeks before them.
- * With 8 weeks of data that means weeks 5-8 versus weeks 1-4.
- * Returns null if there are fewer than 2 weeks of data.
+ * Compare the latest weeks with the same number of weeks just before them.
+ * Example: 8 weeks selected -> weeks 5-8 versus weeks 1-4.
+ * If the number of weeks is odd, the oldest week is left out so both
+ * periods have the same length.
+ *
+ * allRows: the rows to use. They may include weeks outside the selection,
+ *          which are needed to work out follower growth correctly.
+ * weeks:   the selected weeks, oldest first (defaults to every week in allRows).
+ * Returns null if fewer than 2 weeks are selected.
  */
 export function comparePeriods(
-    rows: WeeklyMetric[],
+    allRows: WeeklyMetric[],
     startingFollowers: Record<Platform, number>,
+    weeks: string[] = getWeeks(allRows),
 ): PeriodComparison | null {
-    const weeks = getWeeks(rows)
     const half = Math.floor(weeks.length / 2)
     if (half < 1) return null
 
-    const previous = summarisePeriod(rows, weeks.slice(0, half), startingFollowers)
-    const current = summarisePeriod(
-        rows,
-        weeks.slice(weeks.length - half),
-        startingFollowers,
-    )
+    const previousWeeks = weeks.slice(weeks.length - 2 * half, weeks.length - half)
+    const currentWeeks = weeks.slice(weeks.length - half)
+    const previous = summarisePeriod(allRows, previousWeeks, startingFollowers)
+    const current = summarisePeriod(allRows, currentWeeks, startingFollowers)
 
     return {
         current,

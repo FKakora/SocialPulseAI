@@ -6,18 +6,20 @@ import {
     weeklyFollowerGainTrend,
 } from '../lib/chartData'
 import { formatNumber, formatPercent } from '../lib/format'
-import { getWeeks } from '../lib/metrics'
 import type { WeeklyMetric } from '../types'
 import BarChartCard from './BarChartCard'
 import type { BarDatum } from './BarChartCard'
 import LineChartCard from './LineChartCard'
 
 type PlatformsPageProps = {
-    rows: WeeklyMetric[]
+    rows: WeeklyMetric[] // rows for the selected platforms, ALL weeks
+    weeks: string[] // the selected weeks, oldest first
 }
 
-function PlatformsPage({ rows }: PlatformsPageProps) {
-    if (rows.length === 0) {
+function PlatformsPage({ rows, weeks }: PlatformsPageProps) {
+    const visibleRows = rows.filter((row) => weeks.includes(row.weekStart))
+
+    if (visibleRows.length === 0) {
         return (
             <section className="card">
                 <h2 className="panel-title">No data</h2>
@@ -26,8 +28,7 @@ function PlatformsPage({ rows }: PlatformsPageProps) {
         )
     }
 
-    const weeks = getWeeks(rows)
-    const totals = totalsByPlatform(rows)
+    const totals = totalsByPlatform(visibleRows)
 
     const engagementBars: BarDatum[] = totals.map((item) => ({
         name: PLATFORM_LABELS[item.platform],
@@ -44,10 +45,11 @@ function PlatformsPage({ rows }: PlatformsPageProps) {
     return (
         <>
             <p className="period-caption">
-                Based on {weeks.length} weeks of data ({weeks[0]} to{' '}
-                {weeks[weeks.length - 1]}, week start dates). Engagement rate is
-                interactions divided by reach. Real platforms measure reach in
-                different ways, so comparisons between platforms are only indicative.
+                Based on {weeks.length} {weeks.length === 1 ? 'week' : 'weeks'} of
+                data ({weeks[0]} to {weeks[weeks.length - 1]}, week start dates).
+                Engagement rate is interactions divided by reach. Real platforms
+                measure reach in different ways, so comparisons between platforms are
+                only indicative.
             </p>
 
             <div className="chart-grid">
@@ -66,13 +68,13 @@ function PlatformsPage({ rows }: PlatformsPageProps) {
                 <LineChartCard
                     title="Weekly engagement rate"
                     subtitle="How engagement rate changed week by week"
-                    data={weeklyEngagementTrend(rows)}
+                    data={weeklyEngagementTrend(visibleRows)}
                     valueType="percent"
                 />
                 <LineChartCard
                     title="Weekly net follower growth"
                     subtitle="Followers gained minus followers lost each week"
-                    data={weeklyFollowerGainTrend(rows)}
+                    data={weeklyFollowerGainTrend(rows, weeks)}
                     valueType="number"
                     showZeroLine
                 />

@@ -25,7 +25,7 @@ export const STARTING_FOLLOWERS: Record<Platform, number> = {
 
 // 8 weeks x 4 platforms = 32 rows.
 export const WEEKLY_METRICS: WeeklyMetric[] = [
-    { weekStart: '2026-08-24', platform: 'instagram', reach: -25, impressions: 61800, likes: 1911, comments: 160, shares: 317, followersEnd: 18573 },
+    { weekStart: '2026-08-24', platform: 'instagram', reach: 45800, impressions: 61800, likes: 1911, comments: 160, shares: 317, followersEnd: 18573 },
     { weekStart: '2026-08-24', platform: 'tiktok', reach: 119600, impressions: 143300, likes: 6010, comments: 791, shares: 1649, followersEnd: 10238 },
     { weekStart: '2026-08-24', platform: 'youtube', reach: 23400, impressions: 30200, likes: 585, comments: 46, shares: 62, followersEnd: 4273 },
     { weekStart: '2026-08-24', platform: 'facebook', reach: 36400, impressions: 56900, likes: 498, comments: 59, shares: 102, followersEnd: 12615 },
