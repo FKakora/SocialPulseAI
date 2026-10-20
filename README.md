@@ -1,127 +1,159 @@
 # SocialPulse AI
 
-A social media analytics dashboard that turns performance data into clear numbers, charts, findings and a shareable report.
+**A responsive social media analytics dashboard built with React, TypeScript, and Vite.**
 
-> **All data in this project is fictional.** It is sample data for a made-up outdoor-gear brand. It does not come from any real social media account, and no real platform is connected.
+Explore performance metrics, compare social platforms, review calculated insights, filter sample data, and generate shareable reports.
 
-SocialPulse AI is a portfolio project. It shows how data analysis, validation, automation and visual reporting can be combined to answer a practical question: *how are our social channels performing, and what should we try next?*
+🚀 **Live Demo:** [Open SocialPulse AI](https://socialpulse-ai-khaki.vercel.app/)
 
-## What it does
+💻 **Source Code:** [View on GitHub](https://github.com/FKakora/SocialPulseAI)
 
-- **Overview:** five headline metrics (reach, impressions, engagement rate, interactions, follower growth), each compared with the previous period.
-- **Platforms:** engagement and reach comparisons for Instagram, TikTok, YouTube and Facebook, plus weekly engagement and follower-growth trends.
-- **Posts:** a sortable table of individual posts with their engagement rates.
-- **Insights:** findings calculated from the data, kept visibly separate from rule-based suggestions.
-- **Reports:** a report summary you can copy, download as Markdown, or print / save as PDF (the PDF includes the charts).
-- **Filters:** choose platforms and a week range. Every section updates together.
-- **Data quality checks:** 13 automatic checks on the dataset, with a warning shown if any fail.
+> **Data disclaimer:** All data is fictional and represents a made-up outdoor-gear brand. No real social media accounts are connected. Insights and suggestions are generated using fixed, rule-based code; no AI model is integrated into the application itself.
+
+## Features
+
+- **Overview Dashboard:** View key performance indicators and overall social media performance.
+- **Platform Comparisons:** Compare Instagram, TikTok, YouTube, and Facebook performance and trends.
+- **Posts Table:** Review and sort sample social media posts.
+- **Insights:** Explore calculated findings and rule-based suggestions.
+- **Reports:** Copy, download, or print reports, including saving them as PDFs through the browser.
+- **Filtering:** Filter sample data to explore different views.
+- **Data Validation:** Run 13 automated data-quality checks to identify potential data issues.
+
+## Tech Stack
+
+- React 19
+- TypeScript 6
+- Vite 8
+- Recharts 3
+- Git and GitHub
+- Vercel for deployment
 
 ## Screenshots
 
-| Overview | Platforms |
-|---|---|
-| ![Overview](docs/screenshots/overview.png) | ![Platforms](docs/screenshots/platforms.png) |
+### Overview Dashboard
 
-| Insights | Report |
-|---|---|
-| ![Insights](docs/screenshots/insights.png) | ![Report](docs/screenshots/report.png) |
+![Overview dashboard](docs/screenshots/Overview.PNG)
 
-## A note on "AI"
+### Platform Comparisons
 
-The insights are produced by **fixed, rule-based code**. No AI model is connected, no API is called, and there are no API keys in this project. The dashboard labels calculated findings and rule-based suggestions separately so it is always clear which is which.
+![Platform comparisons](docs/screenshots/Platform.PNG)
 
-AI was used as an **assistant while building** the project. See [docs/AI-AND-AUTOMATION.md](docs/AI-AND-AUTOMATION.md) for exactly how.
+### Posts
 
-## Tech stack
+![Posts table](docs/screenshots/Posts.PNG)
 
-- [React](https://react.dev/) 19 and [TypeScript](https://www.typescriptlang.org/) 6
-- [Vite](https://vite.dev/) 8 (development server and build tool)
-- [Recharts](https://recharts.org/) 3 (charts)
-- No backend, no database, no paid services
+### Insights
 
-## Getting started
+![Insights dashboard](docs/screenshots/Insights.PNG)
 
-**Requirements:** Node.js 20.19+ or 22.12+ (developed on Node 24) and npm.
+### Reports
+
+![Reports dashboard](docs/screenshots/Reports.PNG)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed.
+
+### Installation
+
+Clone the repository:
 
 ```bash
-npm install        # install dependencies
-npm run dev        # start the development server (http://localhost:5173)
-npm run build      # type-check and create a production build in dist/
-npm run preview    # serve the production build locally
-npm run lint       # run ESLint
+git clone https://github.com/FKakora/SocialPulseAI.git
 ```
 
-## Project structure
+Open the project folder:
 
+```bash
+cd SocialPulseAI
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the application for production |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run the configured lint checks |
+
+## Project Structure
+
+```text
 src/
 ├── data/
-│   └── sampleData.ts        # the fictional dataset (32 weekly rows, 24 posts)
-├── lib/                     # logic with no screen code
-│   ├── validation.ts        # 13 data quality checks
-│   ├── metrics.ts           # engagement rate, % change, period comparison
-│   ├── chartData.ts         # shapes data for the charts
-│   ├── filters.ts           # post filtering by platform and week
-│   ├── kpis.ts              # turns results into KPI card content
-│   ├── insights.ts          # rule-based findings and suggestions
-│   ├── report.ts            # builds the report and its Markdown text
-│   ├── format.ts            # number, percent and date formatting
-│   └── download.ts          # saves a text file from the browser
-├── components/              # what appears on screen
-│   ├── FilterBar.tsx
-│   ├── KpiCard.tsx
-│   ├── BarChartCard.tsx
-│   ├── LineChartCard.tsx
-│   ├── PlatformsPage.tsx
-│   ├── PostsPage.tsx
-│   ├── InsightsPage.tsx
-│   └── ReportPage.tsx
-├── types.ts                 # TypeScript types for the data
-├── App.tsx                  # layout, navigation and filter state
-└── App.css / index.css      # styles
-docs/                        # project documentation
+│   └── sampleData.ts
+├── lib/
+│   ├── validation
+│   ├── metrics
+│   ├── chartData
+│   ├── filters
+│   ├── kpis
+│   ├── insights
+│   ├── report
+│   ├── format
+│   └── download
+└── components/
 ```
 
-The calculation code in `lib/` is kept separate from the screen code in `components/`, so a number can be checked or fixed without touching the layout.
+The project separates sample data, calculations, validation, report generation, formatting, and reusable UI components.
 
-## How the key numbers are calculated
+*Note: The structure above highlights key areas; individual filenames and folders may vary slightly.*
 
-| Metric | Definition |
-|---|---|
-| Engagement rate | (likes + comments + shares) ÷ reach × 100. Totals are divided by totals, not an average of weekly rates. |
-| Change vs previous | The latest N weeks compared with the N weeks before them. With 8 weeks of data that is weeks 5-8 versus weeks 1-4. If an odd number of weeks is selected, the oldest week is left out so both periods match. |
-| Engagement rate change | Shown in percentage points, not as a percentage of a percentage. |
-| Follower growth | Net new followers: followers at the end of the last week minus followers just before the first week. |
-| Total reach | The platforms' reach added together. People reached on more than one platform are counted more than once. |
+## Dataset and Metric Definitions
 
-If a value cannot be calculated (for example, a change from zero), the dashboard shows "n/a" instead of a misleading number.
+The dashboard uses fictional sample data covering eight weeks, four social media platforms, and 24 posts for a made-up outdoor-gear brand.
 
-## Data quality
+Metrics and visualisations are calculated from this sample dataset. Results should be interpreted as demonstration data, not real business performance.
 
-Thirteen automatic checks run on the dataset: valid numbers, known platform names, real Monday dates, no duplicate rows, no missing weeks, impressions never below reach, engagement rate calculable and not above 100%, unique post IDs, and posts inside the weekly date range. If any check fails, the dashboard shows a warning.
+## Data Quality
 
-These checks catch impossible data. They cannot catch a value that is plausible but wrong. The full list and what the checks cannot do are in [docs/DATA-QUALITY-AND-LIMITATIONS.md](docs/DATA-QUALITY-AND-LIMITATIONS.md).
+The application includes 13 automated data-quality checks designed to help identify potential problems in the sample data.
+
+These checks demonstrate validation and data-reliability practices that are important when building analytics dashboards.
 
 ## Limitations
 
-- The data is fictional and small (8 weeks, 4 platforms, 24 posts).
-- Data is weekly, so date filtering works in whole weeks, not days.
-- The posts are a sample and are not reconciled with the weekly platform totals.
-- Platforms measure reach differently in reality, so cross-platform comparisons are indicative only.
-- Format comparisons rest on 2-3 posts per format and are labelled as very small samples.
-- The calculations were checked against independently worked-out figures, but the project does not yet include automated unit tests.
+- The application uses fictional sample data.
+- It does not connect to real social media accounts or platform APIs.
+- Insights and suggestions are produced by fixed, rule-based logic.
+- No AI model or AI API is integrated into the application itself.
+- Data is not persisted through a backend database.
 
-## Possible next steps
+## Possible Next Steps
 
-- Add automated tests for the calculation and validation code (for example with Vitest).
-- Import real exports (CSV) with schema validation, and add a reconciliation check against known totals.
-- Use daily data so reports can follow calendar months.
-- Generate suggestion text with a real AI model through a small backend, so no API key is ever in the browser, while keeping calculated findings separate.
-- Deploy the dashboard as a static site.
+- Add automated tests for calculation and data-validation logic.
+- Support CSV imports with schema validation and data-quality checks.
+- Introduce daily data for more flexible date filtering and monthly reporting.
+- Explore AI-generated suggestions through a secure backend, keeping calculated findings separate from AI-generated content.
+- Consider persistent storage and supported social media API integrations.
 
-## Documentation
+## What I Learned
 
-- [Written analysis: key findings and recommendations](docs/ANALYSIS.md)
-- [Sample report (exported from the app)](docs/sample-report.md)
-- [How AI assistance and automation were used](docs/AI-AND-AUTOMATION.md)
-- [Data quality checks and limitations](docs/DATA-QUALITY-AND-LIMITATIONS.md)
+This project demonstrates practical experience with React, TypeScript, data visualisation, reusable components, data validation, filtering, report generation, Git-based version control, and deployment using Vercel.
+
+It also demonstrates the use of AI-assisted development as a support tool while building and troubleshooting a software project.
+
+## Author
+
+**Ferlando Kakora**
+
+- **Live Demo:** https://socialpulse-ai-khaki.vercel.app/
+- **GitHub Repository:** https://github.com/FKakora/SocialPulseAI
