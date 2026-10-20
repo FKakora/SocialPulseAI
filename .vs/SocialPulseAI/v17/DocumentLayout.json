@@ -3,28 +3,80 @@
   "WorkspaceRootPath": "C:\\Learnnet\\SocialPulseAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\data\\sampleData.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\data\\sampleData.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\chartdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\chartdata.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\download.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\download.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\report.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\report.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\ReportPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\ReportPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\data\\sampleData.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\data\\sampleData.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\InsightsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\InsightsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\insights.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\insights.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\PostsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\PostsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\FilterBar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\FilterBar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\PlatformsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\PlatformsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\LineChartCard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\LineChartCard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\PlatformsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\PlatformsPage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\chartData.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\chartData.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\filters.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\filters.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\metrics.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\metrics.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\format.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\format.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\components\\BarChartCard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -43,14 +95,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\validation.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\metrics.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\metrics.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\lib\\format.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\lib\\format.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Learnnet\\SocialPulseAI\\src\\types.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\types.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -66,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,54 +118,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "chartData.ts",
-              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\chartData.ts",
-              "RelativeDocumentMoniker": "src\\lib\\chartData.ts",
-              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\chartData.ts",
-              "RelativeToolTip": "src\\lib\\chartData.ts",
-              "ViewState": "AgIAADsAAAAAAAAAAAAiwFkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:54:22.439Z",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-20T06:00:02.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlatformsPage.tsx",
-              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\PlatformsPage.tsx",
-              "RelativeDocumentMoniker": "src\\components\\PlatformsPage.tsx",
-              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\PlatformsPage.tsx",
-              "RelativeToolTip": "src\\components\\PlatformsPage.tsx",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAiwG8AAAAcAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-10-20T05:35:17.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "download.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\download.ts",
+              "RelativeDocumentMoniker": "src\\lib\\download.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\download.ts",
+              "RelativeToolTip": "src\\lib\\download.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:51:55.172Z",
+              "WhenOpened": "2026-10-20T05:30:57.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "LineChartCard.tsx",
-              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\LineChartCard.tsx",
-              "RelativeDocumentMoniker": "src\\components\\LineChartCard.tsx",
-              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\LineChartCard.tsx",
-              "RelativeToolTip": "src\\components\\LineChartCard.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAcAAAAAAAAAA==",
+              "Title": "report.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\report.ts",
+              "RelativeDocumentMoniker": "src\\lib\\report.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\report.ts",
+              "RelativeToolTip": "src\\lib\\report.ts",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwK4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:51:22.771Z",
+              "WhenOpened": "2026-10-20T05:30:43.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BarChartCard.tsx",
-              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\BarChartCard.tsx",
-              "RelativeDocumentMoniker": "src\\components\\BarChartCard.tsx",
-              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\BarChartCard.tsx",
-              "RelativeToolTip": "src\\components\\BarChartCard.tsx",
-              "ViewState": "AgIAACYAAAAAAAAAAAAiwEQAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ReportPage.tsx",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\ReportPage.tsx",
+              "RelativeDocumentMoniker": "src\\components\\ReportPage.tsx",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\ReportPage.tsx",
+              "RelativeToolTip": "src\\components\\ReportPage.tsx",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAiwCsBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:51:04.5Z",
+              "WhenOpened": "2026-10-20T05:28:19.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "insights.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\insights.ts",
+              "RelativeDocumentMoniker": "src\\lib\\insights.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\insights.ts",
+              "RelativeToolTip": "src\\lib\\insights.ts",
+              "ViewState": "AgIAAJcBAAAAAAAAAAAiwLUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-19T05:28:23.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InsightsPage.tsx",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\InsightsPage.tsx",
+              "RelativeDocumentMoniker": "src\\components\\InsightsPage.tsx",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\InsightsPage.tsx",
+              "RelativeToolTip": "src\\components\\InsightsPage.tsx",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwGcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-19T05:28:11.417Z",
               "EditorCaption": ""
             },
             {
@@ -132,40 +215,169 @@
               "RelativeDocumentMoniker": "src\\App.tsx",
               "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\App.tsx",
               "RelativeToolTip": "src\\App.tsx",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAiwOEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAANsAAADAmZmZmTkwwEoBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2026-10-18T13:04:26.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "App.css",
               "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\App.css",
               "RelativeDocumentMoniker": "src\\App.css",
               "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\App.css",
               "RelativeToolTip": "src\\App.css",
-              "ViewState": "AgIAAFIBAAAAMzMzMzMbwHEBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAO8CAAAAAAAAAAAAAA4DAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-10-18T13:09:29.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\vite.config.ts",
+              "RelativeDocumentMoniker": "vite.config.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\vite.config.ts",
+              "RelativeToolTip": "vite.config.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-19T05:03:56.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "sampleData.ts",
               "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\data\\sampleData.ts",
               "RelativeDocumentMoniker": "src\\data\\sampleData.ts",
               "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\data\\sampleData.ts",
               "RelativeToolTip": "src\\data\\sampleData.ts",
-              "ViewState": "AgIAABEAAAAAmpmZmZkuwBsAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAmpmZmZkuwBsAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2026-10-18T13:21:43.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
+              "Title": "LineChartCard.tsx",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\LineChartCard.tsx",
+              "RelativeDocumentMoniker": "src\\components\\LineChartCard.tsx",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\LineChartCard.tsx",
+              "RelativeToolTip": "src\\components\\LineChartCard.tsx",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAiwGAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-18T13:51:22.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlatformsPage.tsx",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\PlatformsPage.tsx",
+              "RelativeDocumentMoniker": "src\\components\\PlatformsPage.tsx",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\PlatformsPage.tsx",
+              "RelativeToolTip": "src\\components\\PlatformsPage.tsx",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAiwHEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-18T13:51:55.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "chartData.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\chartData.ts",
+              "RelativeDocumentMoniker": "src\\lib\\chartData.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\chartData.ts",
+              "RelativeToolTip": "src\\lib\\chartData.ts",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-18T13:54:22.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "filters.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\filters.ts",
+              "RelativeDocumentMoniker": "src\\lib\\filters.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\filters.ts",
+              "RelativeToolTip": "src\\lib\\filters.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-19T04:54:10.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FilterBar.tsx",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\FilterBar.tsx",
+              "RelativeDocumentMoniker": "src\\components\\FilterBar.tsx",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\FilterBar.tsx",
+              "RelativeToolTip": "src\\components\\FilterBar.tsx",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAiwGgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-19T04:53:21.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PostsPage.tsx",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\PostsPage.tsx",
+              "RelativeDocumentMoniker": "src\\components\\PostsPage.tsx",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\PostsPage.tsx",
+              "RelativeToolTip": "src\\components\\PostsPage.tsx",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAiwJwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-19T04:53:32.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "metrics.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\metrics.ts",
+              "RelativeDocumentMoniker": "src\\lib\\metrics.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\metrics.ts",
+              "RelativeToolTip": "src\\lib\\metrics.ts",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAiwKIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-18T13:29:14.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "format.ts",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\format.ts",
+              "RelativeDocumentMoniker": "src\\lib\\format.ts",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\format.ts",
+              "RelativeToolTip": "src\\lib\\format.ts",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-18T13:28:47.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BarChartCard.tsx",
+              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\BarChartCard.tsx",
+              "RelativeDocumentMoniker": "src\\components\\BarChartCard.tsx",
+              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\components\\BarChartCard.tsx",
+              "RelativeToolTip": "src\\components\\BarChartCard.tsx",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwEQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-10-18T13:51:04.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "KpiCard.tsx",
               "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\components\\KpiCard.tsx",
               "RelativeDocumentMoniker": "src\\components\\KpiCard.tsx",
@@ -173,12 +385,11 @@
               "RelativeToolTip": "src\\components\\KpiCard.tsx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:38:36.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T13:38:36.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 21,
               "Title": "kpis.ts",
               "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\kpis.ts",
               "RelativeDocumentMoniker": "src\\lib\\kpis.ts",
@@ -186,25 +397,11 @@
               "RelativeToolTip": "src\\lib\\kpis.ts",
               "ViewState": "AgIAACwAAAAAAAAAAAAiwEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:37:28.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T13:37:28.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "metrics.ts",
-              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\metrics.ts",
-              "RelativeDocumentMoniker": "src\\lib\\metrics.ts",
-              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\metrics.ts",
-              "RelativeToolTip": "src\\lib\\metrics.ts",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAiwJ4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:29:14.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "validation.ts",
               "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\validation.ts",
               "RelativeDocumentMoniker": "src\\lib\\validation.ts",
@@ -212,25 +409,11 @@
               "RelativeToolTip": "src\\lib\\validation.ts",
               "ViewState": "AgIAADYBAAAAAAAAAAAiwFQBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:29:01.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T13:29:01.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "format.ts",
-              "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\format.ts",
-              "RelativeDocumentMoniker": "src\\lib\\format.ts",
-              "ToolTip": "C:\\Learnnet\\SocialPulseAI\\src\\lib\\format.ts",
-              "RelativeToolTip": "src\\lib\\format.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:28:47.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "types.ts",
               "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\types.ts",
               "RelativeDocumentMoniker": "src\\types.ts",
@@ -238,12 +421,11 @@
               "RelativeToolTip": "src\\types.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2026-10-18T13:20:55.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T13:20:55.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "index.css",
               "DocumentMoniker": "C:\\Learnnet\\SocialPulseAI\\src\\index.css",
               "RelativeDocumentMoniker": "src\\index.css",
@@ -251,8 +433,7 @@
               "RelativeToolTip": "src\\index.css",
               "ViewState": "AgIAABIAAAAAAAAAAADwvzEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-18T13:08:55.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T13:08:55.854Z"
             }
           ]
         }
